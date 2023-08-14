@@ -25,7 +25,19 @@ module.exports = {
     // and more work is needed if then plugin or js function will help to loader to perform task
 
     // loaders
-
+    module: {
+        rules: [
+            // handle css
+            {
+                test: /\.css$/,
+                use: ['style-loader','css-loader']
+            }, 
+            // handle images
+            {}, 
+            // handle js
+            {}
+        ],
+    },
     //plugin
     plugins: [new HtmlWebpackPlugin({
         title: 'just a html page title',
