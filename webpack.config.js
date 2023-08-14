@@ -18,6 +18,15 @@ module.exports = {
         clean: true
     },
 
+    // set up webpack dev serve
+    devtool: 'inline-source-map', //not required in production mode
+    devServer: {
+        static: path.resolve(__dirname, 'dis'),
+        port: 7001,
+        open: true,
+        hot: true,
+    },
+
     // webpack only understand js and json by default
     // image file, css file, svg file does not know how to handle any type of file
     // loaders do help the webpack to understand and scan css, html, imge or any other file tyle

@@ -1,4 +1,4 @@
-import stle from './main.css'
+import style from './main.css'
 // import logo from './logo.png'
 
 
